@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Home </title>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+       
+    }
+    
+
+    .contact {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url("pic1.jpg");
+        background-size: cover;
+    }
+    .contact .content{
+        max-width: 800px;
+        text-align: center;
+    }
+    .contact .content h2 {
+        font-size: 36px;
+        font-weight: 500;
+        color: white;  
+    }
+    .contact .content p {
+        font-weight: 300;
+        color: white;  
+    }
+    .Container{
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .navbar{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .Container .ContactInfo{
+        width: 50%;                                                                                                                                                                                                                     
+        display: flex;
+        flex-direction: column;
+
+    }
+    .Container .ContactInfo .Box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    .Container .ContactInfo .Box .icon{
+        min-width:  60px;
+        height: 60px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+    .Container .ContactInfo .Box .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: white;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    .Container .ContactInfo .Box .text h3{
+        font-weight: 500;
+        color: #00bcd4;
+
+    }
+    .ContactForm{
+        width: 40%;
+        padding: 40px;
+        background: white;
+    }
+    .ContactForm h2 {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+    .ContactForm .InputBox{
+        position: relative;
+        width: 100%;
+        margin: 10px;
+    }
+    .ContactForm .InputBox input,
+    .ContactForm .InputBox textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    .ContactForm .InputBox span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5px;
+        color: #668;
+    }
+
+</style>
+<body>
+    <section class="contact">
+        <div class="navbar">
+            <a href="index.html"> <img src="logo.png"> </a>
+            <nav>
+            <div class="nav-links">
+                <ul>
+                    <li> <a href="home.html"> HOME </a> </li>
+                    <li> <a href="about.html"> ABOUT </a> </li>
+                    <li> <a href="contact.html"> CONTACT US </a> </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <h2> Contact Us </h2>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, voluptatum nihil aut nulla et totam 
+                quod eius expedita tempore nobis eveniet recusandae? Est facilis dolorum delectus illum. Odio, similique sit.</P>  
+            </div>
+            <div class="Container">
+                <div class="ContactInfo">
+                    <div class="Box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>122 Legaspi corner Velasco Streets,</p>
+                        </div>
+                    </div>
+                    <div class="Box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>587-475-6987</p>
+                        </div>
+                    </div>
+                    <div class="Box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>whvhusv@gmail.com</p>
+                        </div>
+                </div>
+            </div>
+            <div class="ContactForm">
+                <form>
+                    <h2>Sign in</h2>
+                    <div class="InputBox">
+                        <input type="text" id="fname" name="firstname" placeholder="Your Name">
+                    </div>
+                    <div class="InputBox">
+				<input type="text" name="lastaname" id="lname" placeholder="Your Last Name">
+                    </div>
+                    <div class="InputBox">
+                        <input type="text" name="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="InputBox">
+                        <textarea id="subject" name="subject" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="InputBox">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    </section>
+  
+
+</body>
+</html>
